@@ -54,7 +54,7 @@ module.exports = {
           banned: false,
           level: 0,
           role: 'Beginner',
-          autolevelup: false,
+          autolevelup: true,
         }
 
         let chat = global.db.data.chats[m.chat]
@@ -68,7 +68,7 @@ module.exports = {
           if (!('sPromote' in chat)) chat.sPromote = ''
           if (!('sDemote' in chat)) chat.sDemote = ''
           if (!('delete' in chat)) chat.delete = true
-          if (!('antiLink' in chat)) chat.antiLink = false
+          if (!('antiLink' in chat)) chat.antiLink = true
           if (!('viewonce' in chat)) chat.viewonce = false
         } else global.db.data.chats[m.chat] = {
           isBanned: false,
@@ -79,7 +79,7 @@ module.exports = {
           sPromote: '',
           sDemote: '',
           delete: true,
-          antiLink: false,
+          antiLink: true,
           viewonce: false,
         }
       } catch (e) {
@@ -401,7 +401,7 @@ global.dfail = (type, m, conn) => {
     private: 'This command can only be used in Private Chat !',
     admin: 'This command is only for *Group Admin* !',
     botAdmin: 'Make bot as *Admin* to use this command !',
-    unreg: 'Please register to use this feature by typing:\n\n*#register name.age*\n\nExample: *#register David.21*'
+    unreg: 'Please register to use this feature by typing:\n\n*#register name.age*\n\nExample: *#register DripsMemes.21*'
   }[type]
   if (msg) return m.reply(msg)
 }
