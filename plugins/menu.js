@@ -43,7 +43,7 @@ const defaultMenu = {
 
 〽️ Prefix: *%p*
 📅 Date: *%week, %date*
-💠 htts://wa.me/27634090203
+💠 https://youtube.com/channel/UCLurCE7y35ZQyP7_KPBb_Tw
 
 👇🏻 All usable commands are listed below 
 
